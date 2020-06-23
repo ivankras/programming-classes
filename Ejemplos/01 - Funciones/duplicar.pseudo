@@ -1,0 +1,34 @@
+int a = 9;
+
+int b = duplicar(a);
+int c = duplicar(&a);
+
+int duplicar(int x) {
+    x = x * 2;
+    return x;
+}
+
+int duplicar(int* x) {
+    *x = (*x) * 2;
+    return *x;
+}
+
+FUNCTION:
+
+<tipo_dato devuelve> <nombre_func>(<tipo_dato param> <nombre_param>) {
+    <def de variables y algoritmo>
+    <return dato_respuesta>
+}
+
+
+-----------------
+(a)    18
+-----------------
+(b)    18
+-----------------
+(c)    18
+-----------------
+(x)    dir(a)
+-----------------
+
+-----------------

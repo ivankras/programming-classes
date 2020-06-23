@@ -1,0 +1,42 @@
+programa hacerEnsalada {
+
+    arreglo[verdura] bolsaVerduras = [tomate, lechuga, zanahoria, ...];
+    contadorDeVerduras = contar(bolsaVerduras);
+
+    verdurasLimpias = lavarVerduras(bolsaVerduras);
+    secarVerduras(verdurasLimpias);
+
+    pelarVerduras(zanahoria, ...);
+    cortarVerduras(tomate, lechuga, zanahoria);
+
+    ensalada = mezclarVerduras(tomate, lechuga, zanahoria);
+    condimentar(ensalada);
+}
+
+function lavarVerduras(arreglo[verdura] bolsaVerduras) {
+    int i = 1;
+    arreglo[verdura] ensaladera = pasarVerduras(bolsaVerduras);
+
+    while (i <= contadorDeVerduras) {
+        lavarVerdura(ensaladera[i]);
+        i = i + 1;
+    }
+
+    return ensaladera;
+}
+
+function lavarVerdura(verdura v) {
+    tirarAlPasto(v);
+}
+
+entero: 0, 2, -3, 4 ...
+real
+booleanos
+char
+------
+arreglos/vectores => [1, 5, 7, 2, 3, 2]
+                  => [true, false, false, false]
+                  => ['c', 'h', 'a', 'u', '\0']
+cadenas de caracteres (string)
+                  => "chau"
+estructuras complejas
