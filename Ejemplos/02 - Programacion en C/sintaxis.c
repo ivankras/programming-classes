@@ -1,3 +1,5 @@
+#include "ejemplos.c"
+
 // <tipo_retorno> <nombre_func>(<tipo_arg> <nombre_arg>) {
 //     <definicion de variables>
 //     <algoritmo>
@@ -10,11 +12,12 @@ int main(int argc, char* argv[]) {
     
     // <tipo_dato> <nombre>;
     int a; // Tengo disponible en memoria la variable a, pero tiene información basura
-    // <tipo_dato> <nombre> = <valor_inicial>;
     char b;
     char c;
+    // <tipo_dato> <nombre> = <valor_inicial>;
     int contador = 10;
     int i;
+    int resultado;
 
     // Algoritmo
     a = 15;
@@ -45,6 +48,8 @@ int main(int argc, char* argv[]) {
         // 15 % 2 = 1  =>  15 es impar
         // 14 % 2 = 0  =>  14 es par
     }
+
+    resultado = sumarMacro(a);
 
     // Retorno
     return 0;
