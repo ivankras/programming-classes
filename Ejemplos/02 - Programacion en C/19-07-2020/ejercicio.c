@@ -1,17 +1,20 @@
 #include <stdio.h>
 
-int cuadrado(int x);
+void ejercicio3Practica1(void);
+int cuadrado(int* x);
 
 int main() {
-    int a, par;
+    // int a, par;
 
-    printf("Ingrese numero a elevar al cuadrado: ");
-    scanf("%d", &a);
-    fflush(stdin);
+    // printf("Ingrese numero a elevar al cuadrado: ");
+    // scanf("%d", &a);
+    // fflush(stdin);
 
-    par = cuadrado(&a);
+    // par = cuadrado(&a);
 
-    printf("\n%d^2 = %d", a);
+    // printf("\n%d^2 = %d", a);
+    
+    ejercicio3Practica1();
 
     return 0;
 }
@@ -54,4 +57,35 @@ unsigned int factorial(unsigned int n) {
     // !0 = 1                   factorial(0) => return 1
 }
 
+void ejercicio3Practica1(void) {
+    int i;
+    int a;
+    int a_acum;
 
+    // 10 veces
+    for (i=0; i<10; i++) {
+        // Leer un entero
+        printf("Ingrese el entero a procesar (i=%d):", i+1);
+        scanf("%d", &a);
+        fflush(stdin);
+
+        // Sumar todos los digitos
+        a_acum = 0;
+        while (a != 0) {
+            a_acum += a % 10;
+            a /= 10;
+
+            if (a == 0) {
+                if (a_acum < 10) {
+                    // El resultado es de un digito
+                    printf("%d\n", a_acum);
+                } else {
+                    // El resultado es de mas de un digito
+                    // Empezar de nuevo con el nuevo a_acum
+                    a = a_acum;
+                    a_acum = 0;
+                }
+            } 
+        }
+    }
+}
