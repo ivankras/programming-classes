@@ -6,9 +6,9 @@ int main() {
     int *ptr = &a;
 
 
-    printf("a: %d -- &a: %d\n", a, &a);
-    printf("b: %d -- &b: %d\n", b, &b);
-    printf("ptr: %d -- *ptr: %d\n\n", ptr, *ptr);
+    printf("a: %d -- &a: %p\n", a, &a);
+    printf("b: %d -- &b: %p\n", b, &b);
+    printf("ptr: %p -- *ptr: %d\n\n", ptr, *ptr);
 
     printf("Variable a: %d\n", a);
     printf("Variable b: %d\n", b);
@@ -29,9 +29,9 @@ int main() {
     printf("Variable b: %d\n", b);
     printf("Valor apuntado por ptr: %d\n\n", *ptr);
 
-    printf("a: %d -- &a: %d\n", a, &a);
-    printf("b: %d -- &b: %d\n", b, &b);
-    printf("ptr: %d -- *ptr: %d\n\n", ptr, *ptr);
+    printf("a: %d -- &a: %p\n", a, &a);
+    printf("b: %d -- &b: %p\n", b, &b);
+    printf("ptr: %p -- *ptr: %d\n\n", ptr, *ptr);
 
     // Retorno
     return 0;
