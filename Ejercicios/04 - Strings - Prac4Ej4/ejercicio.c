@@ -1,11 +1,13 @@
 #include <stdio.h>
 
+#define TAM_MAX 50
+
 unsigned int strlen(char[]);
 
 int main() {
     // Implementar la función strlen
     //  (que devuelva la longitud de un string)
-    char palabra[1532];
+    char palabra[TAM_MAX];
 
     printf("Ingresame la palabra, que te voy a decir su longitud porque soy re piola:\n");
     scanf("%s", palabra);
