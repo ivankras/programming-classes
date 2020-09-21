@@ -5,6 +5,14 @@
 #define FALSE 0
 #define TRUE !FALSE
 
+#ifndef NULL
+    #define NULL 0
+#endif
+
+#if !defined(NULL)
+    #define NULL 0
+#endif
+
 int main() {
     
     int a = 3;
